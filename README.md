@@ -9,6 +9,7 @@
 9.	Congrats, now go to start and open the visual studio code editor ubuntu version. 
 10.	Do the initial settings.
 11.	Next would be to install miniconda. Using the following command
+    
 a.	# ## Prerequisite. Run on Terminal. Install miniconda. In the folder cd /home/asus/
 
 b.	mkdir -p ~/miniconda3
@@ -23,18 +24,24 @@ f.	~/miniconda3/bin/conda init bash
 
 g.	~/miniconda3/bin/conda init zsh
 
-13.	Next would be set up a virtual environment 
+13.	Next would be set up a virtual environment
+    
 a.	### Run on Terminal 
+
 b.	conda create --name unsloth_env python=3.11 pytorch-cuda=12.1 pytorch cudatoolkit xformers -c pytorch -c nvidia -c xformers -y
+
 c.	conda activate unsloth_env
+
 d.	pip install "unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git"
+
 e.	pip install --no-deps trl peft accelerate bitsandbytes
-14.	As a last step, do, conda install jupyter
-15.	Now, get the files ready, and train the model. While training, there will be another issue of C compiler not found. You solve this by running these two:
+
+15.	As a last step, do, conda install jupyter
+16.	Now, get the files ready, and train the model. While training, there will be another issue of C compiler not found. You solve this by running these two:
 a.	sudo apt update
 b.	sudo apt install build-essential
-16.	Next would be to save the models as safe tensors
-17.	Next would be save in the .gguf format
-18.	This would be used to make the ollama model
-19.	Next, install the Ollama library using the command on terminal “curl -fsSL https://ollama.com/install.sh | sh”
-20.	Create the Modelfile and run the ollama command to create the model using the Modelfile
+17.	Next would be to save the models as safe tensors
+18.	Next would be save in the .gguf format
+19.	This would be used to make the ollama model
+20.	Next, install the Ollama library using the command on terminal “curl -fsSL https://ollama.com/install.sh | sh”
+21.	Create the Modelfile and run the ollama command to create the model using the Modelfile
