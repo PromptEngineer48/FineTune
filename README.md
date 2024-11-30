@@ -24,6 +24,10 @@ f.	~/miniconda3/bin/conda init bash
 
 g.	~/miniconda3/bin/conda init zsh
 
+h. source ~/miniconda3/bin/activate
+
+i. conda init --all
+
 13.	Next would be set up a virtual environment
     
 a.	### Run on Terminal 
